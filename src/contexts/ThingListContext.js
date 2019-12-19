@@ -1,5 +1,12 @@
 import React, { Component } from 'react'
 
+export const nullThing = {
+  image: '',
+  title: '',
+  content: ''
+
+}
+
 const ThingListContext = React.createContext({
   thingList: [],
   error: null,
@@ -20,7 +27,7 @@ export class ThingListProvider extends Component {
   }
 
   setError = error => {
-    console.error(error)
+    //console.error(error)
     this.setState({ error })
   }
 
